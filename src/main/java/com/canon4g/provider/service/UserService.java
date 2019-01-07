@@ -10,4 +10,8 @@ import org.springframework.stereotype.Service;
 public interface UserService {
 
     String sayHello(String name);
+
+    User getUserInfo(String loginName);
+
+    void redisInitData();
 }

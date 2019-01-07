@@ -7,6 +7,8 @@ import java.io.Serializable;
  **/
 public class User implements Serializable {
 
+    private static final long serialVersionUID = -2906095421970292883L;
+
     private String userName;
 
     public User() {
@@ -23,5 +25,12 @@ public class User implements Serializable {
     public User setUserName(String userName) {
         this.userName = userName;
         return this;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "userName='" + userName + '\'' +
+                '}';
     }
 }
